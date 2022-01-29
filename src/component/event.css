@@ -148,6 +148,8 @@ font-family: 'Supermercado One', cursive;
     margin: 09px 20px;
     border-radius: 3rem; border: 1px solid green;
     text-shadow: 2px 2px #ead6d6;
+    padding-top: 1px;
+    padding-left: 15px;
 }
 .wrap{
     display: flex;
@@ -319,6 +321,10 @@ font-family: 'Supermercado One', cursive;
         padding: 4px 12px 2px 18px;
         float: left;
     }
+    .Message_Time {
+        padding-top: 3px;
+        padding-left: 18px;
+      }
   } 
   @media only screen and (max-width: 667px) and (min-width: 375px) {
     .line_center {
@@ -334,6 +340,10 @@ font-family: 'Supermercado One', cursive;
         padding: 4px 12px 2px 18px;
         float: left;
     }
+    .Message_Time {
+        padding-top: 3px;
+        padding-left: 18px;
+      }
   }
   @media only screen and (max-width: 844px) and (min-width: 390px) {
     .line_center {
@@ -348,6 +358,10 @@ font-family: 'Supermercado One', cursive;
         padding: 4px 12px 2px 18px;
         float: left;
     }
+    .Message_Time {
+        padding-top: 3px;
+        padding-left: 18px;
+      }
   }
    
   @media only screen and (max-width: 995px) and (min-width: 412px) {
@@ -363,6 +377,10 @@ font-family: 'Supermercado One', cursive;
         padding: 4px 12px 2px 18px;
         float: left;
     }
+    .Message_Time {
+        padding-top: 3px;
+        padding-left: 18px;
+      }
   }
   @media only screen and (max-width: 896px) and (min-width: 414px) {
     .line_center {
@@ -378,6 +396,10 @@ font-family: 'Supermercado One', cursive;
         padding: 4px 12px 2px 18px;
         float: left;
     }
+    .Message_Time {
+        padding-top: 3px;
+        padding-left: 18px;
+      }
   }
 /*  
   @media only screen and (max-width: 720px) and (min-width: 540px) {
@@ -410,16 +432,6 @@ font-family: 'Supermercado One', cursive;
         border: 4px solid #957599e6;
     }
   } */
-  .Message_Time {
-    background-color: white;
-    width: 5.5rem;
-    height: 1.5rem;
-    float: left;
-    margin: 9px 20px;
-    border-radius: 3rem;
-    border: 1px solid green;
-    text-shadow: 2px 2px #ead6d6;
-    padding-top: 3px;
-  }
+  
   
   
