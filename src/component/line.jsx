@@ -3,7 +3,6 @@ import TimerMessageBox from '../component/TimerMessageBox'
 import { useState,useLayoutEffect } from 'react'
 const Line = () => {
   const [FmessageBoxItemDetails, setFmessageBoxItemDetails] = useState([]);
-  const [loading, setloading] = useState(false);
   const [messageBoxItemDetails, setmessageBoxItemDetails] = useState([
     
     {
