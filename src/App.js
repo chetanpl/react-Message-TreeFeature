@@ -1,4 +1,3 @@
-import './App.css';
 import EventFire from '../src/component/EventFire'
 function App() {
   return (
