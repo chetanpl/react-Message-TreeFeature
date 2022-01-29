@@ -1,11 +1,9 @@
 import React from 'react'
 import TimerMessageBox from '../component/TimerMessageBox'
-import { useState, useEffect,useLayoutEffect } from 'react'
+import { useState,useLayoutEffect } from 'react'
 const Line = () => {
   const [FmessageBoxItemDetails, setFmessageBoxItemDetails] = useState([]);
   const [loading, setloading] = useState(false);
-  const [loadingcheck, setloadingcheck] = useState(0);
-
   const [messageBoxItemDetails, setmessageBoxItemDetails] = useState([
     
     {
@@ -30,13 +28,7 @@ const Line = () => {
       timerMessageBox: '4:44 PM',
       message_Title: `Second event`,
       message_Decription: `Some More stuff is going on.`, cssPosition: 'messageBoxRight'
-    },
-     {
-    id: 4, message_Position: '30px',
-    timerMessageBox: '4:44 PM',
-    message_Title: `This is the Last event immediate`,
-    message_Decription: `Thanks for sharing with US.`, cssPosition: 'messageBoxLeft'
-  }
+    }
 ]);
 
   const formatAMPM = (date) => {
@@ -53,25 +45,30 @@ const Line = () => {
   useLayoutEffect(() => {
     const intervalID=   setInterval(() => {
          setFmessageBoxItemDetails(prev => {
-         // if(prev && prev.length <4 && loading!==true){
           let item = messageBoxItemDetails[prev.length];
          if(!item){
-          //  const a=prev.pop();
-          //  prev.unshift(a);
+           const a=prev.pop();
+           prev.unshift(a);
 
-        //  clearInterval(intervalID);
          }
          else{
          item.timerMessageBox = formatAMPM(new Date());
+         if (item.id === 0 || item.id === 2 || item.id === 4) {
+          item.cssPosition = 'messageBoxRight';
+        }
+        else {
+          item.cssPosition = 'messageBoxLeft';
+           }
          }
+         
           return item?[...prev, item]:[...prev];
           
         })
-       }, 1000)
+       }, 2000)
        return () => { // clear up
         clearInterval(intervalID)
        }
-  }, [loading])
+  }, [])
   return (<><div className='line_center'>
     {FmessageBoxItemDetails?.map((user,index) => (
       <div key={"disc"+ user.id} ><div id={'disc' + user.id}>

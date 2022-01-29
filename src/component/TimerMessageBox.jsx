@@ -5,7 +5,7 @@ const TimerMessageBox = ({ id, positionClass, message_Position, timerMessageBox,
     style={{
     top: message_Position
   }}>
-    <div className='wrap'> <div key={"Messsage_Title" + id} className='Messsage_Title'>{message_Title} </div><div  className='Message_Time'>{timerMessageBox}</div></div>
+    <div className='wrap'> <div className='Messsage_Title'>{message_Title} </div><div  className='Message_Time'>{timerMessageBox}</div></div>
     <div  className='Messsage_Title'>{message_Decription}</div>
   </div>)
 }
